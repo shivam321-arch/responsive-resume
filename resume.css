@@ -1,0 +1,312 @@
+@import url('https://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+
+}
+
+.container{
+    background-color: white;
+    max-width: 1000px;
+    min-height: 1000px;
+    width:100%;
+    position:relative;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow:0px 35px 55px rgba(0,0,0,0.1);
+    margin:50px;
+}
+
+.left_side{
+    background-color:#003147;
+    position: relative;
+    padding: 40px;
+
+}
+
+.right_side{
+    background-color:white;
+    position: relative;
+    padding: 40px;
+
+}
+
+.profileText{
+    position: relative;
+    color:white;
+    border-bottom:1px solid  rgba(255,255,255,0.2);
+    padding-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+}
+ .profileText .imgBx{
+    height:200px;
+    width:200px;
+    position:relative;
+    
+ 
+    
+}
+
+.imgBx img{
+    object-fit:cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+.profileText h2{
+    font-size: 1.5em;
+    margin-top:30px;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight:600;
+    line-height:1.5em;
+
+
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    margin-top:15px;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight:300;
+    
+
+}
+h3{
+    margin-bottom: 20px;
+    text-align:center;
+    text-transform: uppercase;
+    color:white;
+}
+.contactInfo{
+    padding-top: 20px;
+   
+    color:white;
+   border-bottom: 1px solid grey;
+    font-weight: 600;
+    margin-bottom:25px;
+    
+}
+
+.contactInfo ul{
+    position: relative;
+
+}
+.contactInfo ul li{
+    position: relative;
+    list-style-type: none;
+    margin:10px 0px;
+    cursor:pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width:30px;
+    font-size:18px;
+    color:#03a9f4;
+
+}
+
+.contactInfoeducation{
+    padding-top: 10px;
+   
+    color:white;
+   border-bottom: 1px solid grey;
+    font-weight: 600;
+    margin-bottom:20px;
+    
+}
+
+.contactInfoeducation ul li{
+
+    position: relative;
+    list-style-type: none;
+    margin-bottom:15px;
+    
+    
+}
+
+.contactInfoeducation h5{
+ color:#03a9f4;
+ font-weight: 300;
+ margin-top:12px;
+}
+
+.contactInfoeducation h4:nth-child(2){
+    color:#fff;
+    font-weight: 700;
+   }
+
+   .contactInfoeducation h4{
+    color:#fff;
+    font-weight: 300;
+    margin-top:8px;
+   }
+
+   .contactInfolanguage li{
+       color:white;
+       list-style-type: none;
+       margin-top:6px;
+       margin-bottom: 6px;
+   }
+
+   .contactInfolanguage .percent{
+       position:relative;
+      width:100%;
+      height:6px;
+   
+      display:block;
+      margin-top:5px;
+      background-color: #081921;
+   }
+
+   .contactInfolanguage .percent div{
+       position:absolute;
+       top:0;
+       left:0;
+       height:100%;
+       background-color: #03a9f4;
+       
+   }
+
+   .about{
+       margin-bottom: 50px;
+   }
+   .about:last-child()
+   {
+       margin:0;
+   }
+   .title2{
+       color: #003147;
+       letter-spacing: 1px;
+       text-transform: uppercase;
+       margin-bottom: 10px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   p{
+       color:#333;
+
+   }
+
+   .about .box{
+       display:flex;
+       margin:20px 0;
+       flex-direction:row;
+       
+   }
+
+   .about .box .year_company{
+     min-width: 150px;
+   }
+
+   .about .box .year_company h5{
+       text-transform: uppercase;
+       color:#848c90;
+       font-weight: 600;
+   }
+   .about .box .text h4{
+    text-transform: uppercase;
+    color:#2a7da2;
+    font-size:16px;
+   }
+
+   .skills .box{
+    position:relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 16px;
+
+   }
+.skills .box h4{
+text-transform: uppercase;
+color:#848c90;
+font-weight: 500;
+
+}
+.skills .box  .percent{
+    position:relative;
+    width:100%;
+    height:8px;
+    background: #848c90;
+    border-radius: 8px;
+}
+.skills .box  .percent div{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background: #03a9f4;
+}
+.Interest{
+    margin-top:55px;
+}
+.Interest ul{
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+  
+    
+
+    
+}
+
+.Interest ul li{
+   
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0;
+}
+
+.Interest ul li .fa{
+    color:#03a9f4;
+    font-size: 18px;
+}
+
+@media(max-width:1000px){
+    .container{
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .Interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        margin-bottom: 5px;
+    }
+
+    .Interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+     .skills .box{
+         grid-template-columns: repeat(1,1fr);
+     }
+}
